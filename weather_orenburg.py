@@ -21,7 +21,7 @@ f, temps, dates = narray.T
 fig, ax = plt.subplots(nrows=1, ncols=2)
 
 ax[0].bar(dates.astype(dt.datetime), f.astype('float'))
-ax[0].set(xlabel='Date', ylabel='F', title='Влажность')
+ax[0].set(xlabel='Date', title='Влажность')
 
 ax[1].plot(dates.astype(dt.datetime), temps.astype('float'))
 ax[1].set(xlabel='Date', ylabel='Temp (Cel)', title='Температура')
